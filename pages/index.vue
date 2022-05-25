@@ -49,13 +49,12 @@ export default {
 
 * {
   box-sizing: border-box;
-  
+  margin: 0;
+  padding: 0;
 }
 
 body {
     background-color: #202632;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
