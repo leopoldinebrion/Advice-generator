@@ -1,4 +1,5 @@
 <template>
+<client-only>
   <body>
     <div class="advice">
       <p class="advice__id">Advice #{{ adviceId }}</p>
@@ -8,6 +9,7 @@
       <button class="button" @click="generateNewAdvice"><img src="../assets/icon-dice.svg" alt="Button to generate new advice"></button>
     </div>
   </body>
+</client-only>
 </template>
 
 <script>
