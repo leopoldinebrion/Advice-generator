@@ -3,7 +3,7 @@
   <body>
     <div class="advice">
       <p class="advice__id">Advice #{{ adviceId }}</p>
-      <p class="advice__text">{{ adviceText }}</p>
+      <p class="advice__text">“{{ adviceText }}”</p>
       <div class="divider__desktop"><img src="../assets/pattern-divider-desktop.svg" alt=""></div>
       <div class="divider__mobile"><img src="../assets/pattern-divider-mobile.svg" alt=""></div>
       <button class="button" @click="generateNewAdvice"><img src="../assets/icon-dice.svg" alt="Button to generate new advice"></button>
@@ -45,12 +45,12 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
