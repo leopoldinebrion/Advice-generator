@@ -1,8 +1,8 @@
 <template>
   <body>
     <div class="advice">
-      <div class="advice__id">Advice <span class="advice__number"> #{{ adviceId }}</span></div>
-      <div class="advice__text">{{ adviceText }}</div>
+      <p class="advice__id">Advice #{{ adviceId }}</p>
+      <p class="advice__text">{{ adviceText }}</p>
       <div class="divider__desktop"><img src="../assets/pattern-divider-desktop.svg" alt=""></div>
       <div class="divider__mobile"><img src="../assets/pattern-divider-mobile.svg" alt=""></div>
       <button class="button" @click="generateNewAdvice"><img src="../assets/icon-dice.svg" alt="Button to generate new advice"></button>
@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       adviceId: null,
-      advice: null,
+      adviceText: null,
     }
   },
 
